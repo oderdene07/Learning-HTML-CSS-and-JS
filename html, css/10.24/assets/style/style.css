@@ -1,0 +1,37 @@
+.header {
+  width: 100%;
+  padding: 2rem;
+  background-color: orangered;
+  font-size: 1.5rem;
+  color: #fafafa;
+}
+
+.header-1 {
+  width: 100%;
+  padding: 2rem;
+  background: yellowgreen;
+}
+
+.header-2 {
+  width: 100%;
+  padding: 2rem;
+  background: yellow;
+}
+
+.header-3 {
+  width: 100%;
+  padding: 2rem;
+  background: pink;
+}
+
+.header-4 {
+  width: 100%;
+  padding: 2rem;
+  background: purple;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+/*# sourceMappingURL=style.css.map */

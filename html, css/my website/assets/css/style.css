@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+.main{
+    width: 100%;
+    position: relative;
+}
+.main .background img{
+    width: 100%;
+}
+.main .bg {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: rgba(29, 121, 202, 0.3);
+}
+.photo{
+    position: absolute;
+    top:18%;
+    left: 65%;
+}
+.text{
+    position: absolute;
+    top:18%;
+    left:10%;
+    font-size: 3.5rem;
+    color:#fff;
+}
+.main .text h4 a{
+    color: rgb(68, 212, 193);
+}
+.main .button{
+    border: 5px solid #fff;
+    padding: 1rem 4rem;
+    cursor: pointer;
+    text-transform: uppercase ;
+    font-weight: 700;
+    background: none;
+    transition: .5s;
+    outline: none;
+    color: #fff;
+}
+.main .button:hover{
+    background: #fff;
+    color: #000;
+}
+.main .active{
+    background: #fff;
+    color:#000;
+}
+.main .active:hover{
+    background:none;
+}
+@media(max-width: 768px){
+    .text{
+        top: 31%;
+        font-size: 2rem;
+    }
+    .photo{
+        left:10%;
+        top: 7%;
+    }
+    .photo img{
+        width: 60%;
+
+    }
+    .main .button{
+        padding: 1rem 2rem;
+        margin-top: 1.5rem;
+    }
+}
+@media(max-width: 425px){
+    .text{
+        top: 26%;
+        font-size: 1.7rem;
+        
+    }
+    .photo{
+        left:10%;
+        top: 5%;
+    }
+    .photo img{
+        width: 60%;
+
+    }
+    
+}
