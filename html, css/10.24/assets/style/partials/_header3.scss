@@ -1,5 +1,4 @@
 .header-3{
-    width: 100%;
-    padding: 2rem 0;
+    @include myStyle;
     background: $myColor3;
 }
