@@ -1,0 +1,210 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.header-line{
+	width: 100%;
+	padding: 10px 0;
+	padding-bottom: 5px;
+	background-color: #223140;
+	font-size:15px;
+}
+.container{
+	width: 1150px;
+	margin: auto;
+}
+.header-line .container .menu ul li a {
+	color: #fafafa;
+	text-decoration: none;
+}
+.logo img{
+	width: 126px;
+}
+.logo{
+	width: 50%;
+}
+.menu{
+	width: 50%;
+	color: #fafafa;
+	text-align: right;
+}
+.left{
+	float: left;
+}
+.right{
+	float: right;
+}
+.clear{
+	clear: both;
+}
+.menu ul li {
+	display: inline-block;
+	margin: 0 20px;
+	font-weight: 700;
+	cursor: pointer;
+}
+.ads .container img{
+	width: 100%;
+}
+.all-animes .container .ongoing {
+	width: 100%;
+	border: 1px solid #ccc;
+	padding: 40px 0;
+}
+.one-third{
+	width: 34%;
+}
+.two-third{
+	width: 66%;
+}
+.two-third .a{
+	width: 50%;
+}
+.two-third .b{
+	width: 50%;
+}
+.anime-box{
+	width: 90%;
+	margin: 15px auto;
+}
+.anime-box img{
+	width: 100%;
+}
+.all-animes .container .ongoing .anime-box{
+	position: relative;
+	overflow:  hidden;
+}
+.all-animes .container .ongoing .anime-box img{
+	transition: .3s;
+}
+.all-animes .container .ongoing .anime-box:hover img{
+	transform: scale(1.2);
+}
+.all-animes .container .ongoing .anime-box .caption{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0,0,0,0.5);
+	transform: scaleY(0);
+	transition: .3s;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+}
+.all-animes .container .ongoing .anime-box:hover .caption{
+	transform: scale(1);
+	cursor: pointer;
+}
+.footer{
+	background-color: #223140;
+}
+.pad{
+	padding:20px 0;
+}
+.pad .one-third img{
+	width: 126px;
+	padding-top:10px;
+}
+.pad .one-third ul li{
+	display: inline-block;
+	margin: 10px 2px;
+	cursor: pointer;
+}
+.pad .one-third ul li img{
+	width: 35px;
+	display: inline;
+}
+.pad .two-third ul li{
+	list-style-type: none;
+	cursor: pointer;
+	font-size:15px;
+	padding:10px;
+	
+}
+.pad .two-third .a{
+	font-weight: 700;
+	width: 50%;
+	color: #fafafa;
+}
+.pad .two-third .b{
+	font-weight: 700;
+	width: 50%;
+	color: #fafafa;
+}
+.container .all-ongoing{
+	width:100%;
+	padding: 20px 10px;
+	border: 1px solid #ccc;
+	margin: 15px 0;
+}
+.container .all-ongoing .buttons{
+	width: 100%;
+}
+.container .all-ongoing .buttons .tovch{
+	width: 49.8%;
+	display: inline-block;
+}
+.container .all-ongoing .buttons .baruun{
+	text-align: right;
+}
+.container .all-ongoing .buttons .tovch button{
+	background: #00acc1;
+	border: none;
+	padding: 7px 20px;
+	border-radius: 4px;
+	color: #fff;
+	font-weight: 700;
+}
+.anime-line{
+	width: 100%; 
+	margin: 10px 0;
+}
+.anime-line .single{
+	width: 19.3666%; 
+	margin-right: 5px;
+	display: inline-block;
+	position: relative;
+}
+.anime-line .single:last-child{
+	margin-right: 0;
+}
+.anime-line .single img {
+	width: 100%;
+}
+.anime-line .single .caption {
+	position: absolute;
+	right: 0;
+	left: 0;
+	bottom: 4px;
+	padding: 10px;
+	text-align: center;
+	background: rgba(0,0,0,0.5);
+	color: #fff;
+	font-weight: 700;
+	font-size: 17px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
