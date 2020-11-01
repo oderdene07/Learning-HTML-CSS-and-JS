@@ -1,6 +1,6 @@
 *{
-    margin: 0;
-    padding: 0;
+    margin: 0 !important;
+    padding: 0 !important;
 }
 
 .main{
@@ -27,12 +27,12 @@
     background: #f2f3fa;
     border: 1px solid #cecece;
     border-radius: 50%;
-    margin-bottom: 30px;
+    margin-bottom: 30px !important;
 }
 .main .form input{
     width: 80%;
-    padding: 5px 0;
-    margin-bottom: 15px;
+    padding: 5px 0 !important;
+    margin-bottom: 15px !important;
     border: 1px solid #cecece;
 }
 .main .form .reset{
@@ -41,6 +41,7 @@
     justify-content: space-between;
     color: #999;
     font-size: 14px;
+    padding-bottom: 10px !important;
 }
 input[type=button] {
     padding: 10px 0 !important;
