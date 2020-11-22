@@ -11,7 +11,7 @@ console.log('tegsh untsugtiin talbai = ' + S);
 
 var x = 32;
 var y = 45;
-var z = 35; 
+var z = 35;
 var p = x + y + z;
 console.log('gurvaljnii taluud: ' + x + ', ' + y + ', ' + z);
 console.log('gurvaljnii perimeter = ' + p);
