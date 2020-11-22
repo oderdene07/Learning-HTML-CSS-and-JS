@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    width: 100%;
+    padding-bottom: 10px;
+    position: relative;
+    h2{
+        color: #fffdfd;
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        padding: 40px;
+        background: #fb6c64;
+    }
+    .gradient{
+        position: absolute;
+        bottom: 0;
+        background-image: linear-gradient(125deg, #fb6c64 35.71%, #ffffff 35.71%, #ffffff 50%, #fb6c64 50%, #fb6c64 85.71%, #ffffff 85.71%, #ffffff 100%);
+        background-size: 34.18px 48.82px;
+        height: 18px;
+        width: 100%;
+    }
+
+}
+.main{
+    width: 100%;
+    color: #776167;
+    background: #fffdfd;
+    padding: 0 8px;
+    .row{
+        margin: auto;
+        width: 100%;
+        .col-12, .col-6{
+            border-top: 17px solid #fffdfd !important;
+            border-bottom: 8px solid #fffdfd;
+            border-left: 8px solid #fffdfd;
+            border-right: 8px solid #fffdfd;
+            background-color: #ffc4c1;
+            text-align: center;
+            padding: 20px 10px;
+            .name{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                max-height: 12vh;
+            }
+            h3{
+                font-size: 20px;
+            }
+            p{
+                font-size: 12px;
+            }
+        }
+    }
+}
+.footer{
+    width: 100%;
+    color: #fffdfd;
+    padding-top: 5px;
+    position: relative;
+    .text{
+        border-top: 5px solid #fffdfd;
+        padding: 30px;
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        background: #fb6c64;
+    }
+    .gradient{
+        position: absolute;
+        top: 0;
+        background-image: linear-gradient(125deg, #fb6c64 35.71%, #ffffff 35.71%, #ffffff 50%, #fb6c64 50%, #fb6c64 85.71%, #ffffff 85.71%, #ffffff 100%);
+        background-size: 34.18px 48.82px;
+        height: 18px;
+        width: 100%;
+    }
+}
+
+
+@media(min-width:768px){
+    .col-6, .col-12{
+        .name{
+            height: 16vh;
+        }
+        h3{
+            font-size: 1.2rem !important;
+        }
+        p{
+            font-size: 1rem !important;
+        }
+    }
+}
+@media(min-width:1025px){
+    .col-6, .col-12{
+        h3{
+            font-size: 1.5rem !important;
+        }
+        p{
+            font-size: 1.2rem !important;
+        }
+    }
+    .footer{
+        position: absolute;
+        bottom: 0;
+    }
+}
