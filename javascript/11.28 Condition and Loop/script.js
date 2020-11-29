@@ -1,11 +1,11 @@
 //1-r dasgal
 var c = 15
 var d = 125
-
 for(var i = c; i <= d; i++)
     if(i % 3 === 0 && i % 2 === 1)
         console.log(i)
 console.log('\n')
+
 //2-r dasgal
 var a = parseInt(prompt("1-r too"))
 var b = parseInt(prompt("2-r too"))
@@ -31,7 +31,6 @@ else
         console.log(i)
         sum = sum + i
     }
-
 console.log('Niilber = ' + sum)
 
 
