@@ -7,17 +7,13 @@ for (var i = 0; i < countries.length; i+=2)
 console.log('\n')
 
 //2-r dasgal
-var a = parseInt(prompt('Too oruulna uu:'))
-var final = 0
-var b, temp
-temp = a
-while (a > 0){
-    b = a % 10
-    a = Math.floor(a / 10)
-    final = final * 10 + b
+let a = parseInt(prompt("Too oruulna uu: "));
+let c = a.toString();
+let b = c.split("").reverse().join("");
+console.log(c)
+console.log(b)
+if(c === b){
+    console.log("Palindrom bn");
+}else{
+    console.log("Palindrom bish bn");
 }
-if (temp === final){
-    console.log('Pallindrome too mun bn')
-}
-else
-    console.log('Bish bn')
