@@ -1,0 +1,41 @@
+.footer-text{
+    padding-top: 100px;
+    text-align: center;
+    .email input[type=text]{
+        width: 25%;
+        margin-top: 50px;
+        padding: 5px 0;
+        background: #fafafa;
+        font-size: 17px;
+        border: none;
+        border-bottom: 1px solid gray ;
+        &:focus{
+            outline: none;
+        }
+    }
+}
+
+.footer{
+    .social{
+        display: flex;
+        justify-content: space-around;
+        h6{
+            margin: 100px 0;
+            cursor: pointer;
+            font-size: 17px;
+        }
+        i{
+            margin: 10px;
+        }
+    }
+    .privacy{
+        display: flex;
+        justify-content: flex-end;
+        p{
+            margin-right: 30px;
+            margin-bottom: 170px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+    }
+} 
