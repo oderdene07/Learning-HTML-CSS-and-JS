@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .question{
+            display: flex;
+            flex-direction: column;
+        }
+        .question button{
+            width: 100px;
+        }
+        .question img{
+            padding-bottom: 10px;
+            width: 500px;
+        }
+        .display button{
+            display: none;
+        }
+        .answer img{
+            display: none;
+            width: 250px;
+        }
+    </style>
+</head>
+<body>
+    <div class = "question">
+        <h3>Sain bnu. <br> Tanii NBA- iin duriig todorhoilhiin tuld ta ner bolon nasaa oruulna uu. </h3>
+        <img src="./nba.jpg">
+        <button onclick = "info()">OK</button>
+    </div>
+    <div class = "display">
+        <h3 id = "displayInfo"></h3>
+        <button id = "btn" onclick = "display()">NBA - iin duree todorhoiloh</button>
+    </div>
+    <div class = "answer">
+        <h3 id = "answer"></h3>
+        <img id = "harden" src="./james-harden.jpg">
+        <img id = "jordan" src = "./r690463_1296x729_16-9.jpg">
+        <img id = "james" src = "./2544.png">
+    </div>
+    
+
+    <script src="./script.js"></script>
+</body>
+</html>
