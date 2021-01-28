@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(37, 37, 37);
+  color: #fff;
+}
+.container {
+  max-width: 70% !important;
+}
+.sidebar {
+  width: 7%;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: fixed;
+  left: 5px;
+}
+.sidebar .home {
+  text-align: center;
+  cursor: pointer;
+}
+.sidebar .about {
+  text-align: center;
+  cursor: pointer;
+}
+.sidebar .photos {
+  text-align: center;
+  cursor: pointer;
+}
+.sidebar .contact {
+  text-align: center;
+  cursor: pointer;
+}
+.sidebar h5 {
+  margin: 5px 0;
+  font-size: 1rem;
+}
+.sidebar i {
+  font-size: 1.5rem;
+}
+
+/* header */
+
+.header {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+}
+.header .container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.header .container img {
+  width: 40%;
+}
+.header .container h1 {
+  font-size: 70px;
+}
+
+/* about */
+
+.about .container i {
+  font-size: 24px;
+}
+.about .container .me {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.about .container p {
+  width: 64%;
+  margin: 1rem 0;
+}
+.about .container .me img {
+  width: 30%;
+}
+.about .container h2 {
+  margin: 40px 0;
+  font-style: italic;
+}
+.html {
+  width: 100%;
+  height: 20px;
+  background-color: #ccc;
+}
+.html_skill {
+  width: 80%;
+  height: 100%;
+  background-color: #e34c26;
+  border: 1px solid #ccc;
+  animation-name: html;
+  animation-duration: 6s;
+}
+.fa-html5 {
+  color: #e34c26;
+}
+@keyframes html {
+  from {
+    width: 0;
+  }
+  to {
+    width: 80%;
+  }
+}
+.css {
+  width: 100%;
+  height: 20px;
+  background-color: #ccc;
+}
+.css_skill {
+  width: 70%;
+  height: 100%;
+  background-color: #264de4;
+  border: 1px solid #ccc;
+  animation-name: css;
+  animation-duration: 6s;
+}
+.fa-css3-alt {
+  color: #264de4;
+}
+@keyframes css {
+  from {
+    width: 0;
+  }
+  to {
+    width: 70%;
+  }
+}
+.js {
+  width: 100%;
+  height: 20px;
+  background-color: #ccc;
+}
+.js_skill {
+  width: 35%;
+  height: 100%;
+  background-color: #f0db4f;
+  border: 1px solid #ccc;
+  animation-name: js;
+  animation-duration: 6s;
+}
+.fa-js-square {
+  color: #f0db4f;
+}
+@keyframes js {
+  from {
+    width: 0;
+  }
+  to {
+    width: 35%;
+  }
+}
+
+/* photos */
+
+.my_photos {
+  padding-top: 60px;
+}
+.my_photos .slide {
+  max-width: 93%;
+  margin: auto;
+}
