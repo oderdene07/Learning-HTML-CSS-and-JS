@@ -8,30 +8,61 @@
 .container {
   max-width: 70% !important;
 }
+a:hover {
+  text-decoration: none !important;
+}
+/* slidebar  */
+
 .sidebar {
   width: 7%;
-  height: 90vh;
+  height: 95vh;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  align-items: center;
   position: fixed;
   left: 5px;
+  border: 1px solid #ccc;
 }
 .sidebar .home {
+  width: 90%;
+  padding: 5px 2px;
   text-align: center;
   cursor: pointer;
+  border: 1px solid rgb(37, 37, 37);
+}
+.sidebar .home:hover {
+  border: 1px solid #ccc;
 }
 .sidebar .about {
+  width: 90%;
+  padding: 5px 2px;
   text-align: center;
   cursor: pointer;
+  border: 1px solid rgb(37, 37, 37);
+}
+.sidebar .about:hover {
+  border: 1px solid #ccc;
 }
 .sidebar .photos {
+  width: 90%;
+  padding: 5px 2px;
   text-align: center;
   cursor: pointer;
+  border: 1px solid rgb(37, 37, 37);
+}
+.sidebar .photos:hover {
+  border: 1px solid #ccc;
 }
 .sidebar .contact {
+  width: 90%;
+  padding: 5px 2px;
   text-align: center;
   cursor: pointer;
+  border: 1px solid rgb(37, 37, 37);
+}
+.sidebar .contact:hover {
+  border: 1px solid #ccc;
 }
 .sidebar h5 {
   margin: 5px 0;
@@ -165,6 +196,8 @@
   max-width: 93%;
   margin: auto;
 }
+
+/* contact  */
 
 .contact_me {
   padding-bottom: 60px;
