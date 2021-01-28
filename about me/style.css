@@ -265,23 +265,19 @@ a .contact:hover {
 
 @media (max-width: 426px) {
   .sidebar {
-    width: 98%;
+    width: 97%;
   }
   .sidebar h5 {
     display: none;
   }
-  .sidebar a {
-    height: 100%;
-  }
   .sidebar i {
-    margin-top: 11px;
     font-size: 1rem;
   }
-  .sidebar a .home,
-  a .about,
-  a .photos,
-  a .contact {
-    height: 100%;
+  .sidebar a .home:hover,
+  a .about:hover,
+  a .photos:hover,
+  a .contact:hover {
+    border: none;
   }
   .header .container h1 {
     font-size: 32px;
