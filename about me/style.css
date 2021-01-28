@@ -54,7 +54,7 @@
   align-items: center;
 }
 .header .container img {
-  width: 40%;
+  width: 50%;
 }
 .header .container h1 {
   font-size: 70px;
@@ -162,4 +162,42 @@
 .my_photos .slide {
   max-width: 93%;
   margin: auto;
+}
+
+.contact_me {
+  padding: 60px 0;
+}
+.contact_me .container i {
+  font-size: 1.3rem;
+  margin-right: 10px;
+}
+.contact_me .container img {
+  width: 30%;
+  margin-bottom: 20px;
+  margin-right: 40px;
+}
+.contact_me .container form button {
+  width: 6.5rem;
+  height: 2.5rem;
+  margin: 15px 0;
+}
+.contact_me .container .info {
+  width: 100%;
+  display: flex;
+}
+.contact_me .container .info .information {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+.contact_me .container .info .information p {
+  margin: 1rem;
+}
+.contact_me .container .info .information ul {
+  list-style-type: none;
+  font-size: 1.2rem;
+}
+.contact_me .container .info .information .icon li {
+  text-align: center;
+  margin: 15px 0;
 }
