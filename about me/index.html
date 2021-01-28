@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Me</title>
     <link rel="stylesheet" href="./style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -19,22 +20,30 @@
   </head>
   <body>
     <div class="sidebar">
-      <div class="home">
-        <i class="fas fa-home"></i>
-        <a href="#home"><h5>Home</h5></a>
-      </div>
-      <div class="about">
-        <i class="fas fa-user-circle"></i>
-        <a href="#about"><h5>About Me</h5></a>
-      </div>
-      <div class="photos">
-        <i class="fas fa-image"></i>
-        <a href="#photo"><h5>Photos Taken By Me</h5></a>
-      </div>
-      <div class="contact">
-        <i class="fas fa-envelope"></i>
-        <a href="#contact"><h5>Contact</h5></a>
-      </div>
+      <a href="#home">
+        <div class="home">
+          <i class="fas fa-home"></i>
+          <h5>Home</h5>
+        </div>
+      </a>
+      <a href="#about"
+        ><div class="about">
+          <i class="fas fa-user-circle"></i>
+          <h5>About Me</h5>
+        </div>
+      </a>
+      <a href="#photo"
+        ><div class="photos">
+          <i class="fas fa-image"></i>
+          <h5>Photos Taken By Me</h5>
+        </div>
+      </a>
+      <a href="#contact"
+        ><div class="contact">
+          <i class="fas fa-envelope"></i>
+          <h5>Contact</h5>
+        </div>
+      </a>
     </div>
     <div class="header" id="home">
       <div class="container">
@@ -67,15 +76,15 @@
         <h3>Skills</h3>
         <p><i class="fab fa-html5"></i> HTML</p>
         <div class="html">
-          <div class="html_skill"></div>
+          <div class="html_skill" data-aos="flip-right"></div>
         </div>
         <p><i class="fab fa-css3-alt"></i> CSS</p>
         <div class="css">
-          <div class="css_skill"></div>
+          <div class="css_skill" data-aos="flip-left"></div>
         </div>
         <p><i class="fab fa-js-square"></i> JAVASCRIPT</p>
         <div class="js">
-          <div class="js_skill"></div>
+          <div class="js_skill" data-aos="flip-right"></div>
         </div>
       </div>
     </div>
@@ -157,7 +166,7 @@
               <input
                 type="text"
                 class="form-control"
-                id="inputEmail4"
+                id="inputName"
                 placeholder="Name"
               />
             </div>
@@ -186,6 +195,7 @@
       </div>
     </div>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"

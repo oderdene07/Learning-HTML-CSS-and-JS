@@ -5,8 +5,23 @@
   color: #fff;
   scroll-behavior: smooth;
 }
+body::-webkit-scrollbar {
+  width: 0.3em;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgb(37, 37, 37);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
 .container {
   max-width: 70% !important;
+}
+a {
+  width: 100%;
 }
 a:hover {
   text-decoration: none !important;
@@ -14,7 +29,7 @@ a:hover {
 /* slidebar  */
 
 .sidebar {
-  width: 7%;
+  width: 5%;
   height: 95vh;
   display: flex;
   flex-direction: column;
@@ -24,44 +39,17 @@ a:hover {
   left: 5px;
   border: 1px solid #ccc;
 }
-.sidebar .home {
-  width: 90%;
-  padding: 5px 2px;
+.sidebar a .home,
+a .about,
+a .photos,
+a .contact {
   text-align: center;
-  cursor: pointer;
   border: 1px solid rgb(37, 37, 37);
 }
-.sidebar .home:hover {
-  border: 1px solid #ccc;
-}
-.sidebar .about {
-  width: 90%;
-  padding: 5px 2px;
-  text-align: center;
-  cursor: pointer;
-  border: 1px solid rgb(37, 37, 37);
-}
-.sidebar .about:hover {
-  border: 1px solid #ccc;
-}
-.sidebar .photos {
-  width: 90%;
-  padding: 5px 2px;
-  text-align: center;
-  cursor: pointer;
-  border: 1px solid rgb(37, 37, 37);
-}
-.sidebar .photos:hover {
-  border: 1px solid #ccc;
-}
-.sidebar .contact {
-  width: 90%;
-  padding: 5px 2px;
-  text-align: center;
-  cursor: pointer;
-  border: 1px solid rgb(37, 37, 37);
-}
-.sidebar .contact:hover {
+.sidebar a .home:hover,
+a .about:hover,
+a .photos:hover,
+a .contact:hover {
   border: 1px solid #ccc;
 }
 .sidebar h5 {
@@ -125,20 +113,11 @@ a:hover {
   height: 100%;
   background-color: #e34c26;
   border: 1px solid #ccc;
-  animation-name: html;
-  animation-duration: 6s;
 }
 .fa-html5 {
   color: #e34c26;
 }
-@keyframes html {
-  from {
-    width: 0;
-  }
-  to {
-    width: 80%;
-  }
-}
+
 .css {
   width: 100%;
   height: 20px;
@@ -149,19 +128,9 @@ a:hover {
   height: 100%;
   background-color: #264de4;
   border: 1px solid #ccc;
-  animation-name: css;
-  animation-duration: 6s;
 }
 .fa-css3-alt {
   color: #264de4;
-}
-@keyframes css {
-  from {
-    width: 0;
-  }
-  to {
-    width: 70%;
-  }
 }
 .js {
   width: 100%;
@@ -173,27 +142,18 @@ a:hover {
   height: 100%;
   background-color: #f0db4f;
   border: 1px solid #ccc;
-  animation-name: js;
-  animation-duration: 6s;
 }
 .fa-js-square {
   color: #f0db4f;
 }
-@keyframes js {
-  from {
-    width: 0;
-  }
-  to {
-    width: 35%;
-  }
-}
 
 /* photos */
+
 #photo {
   padding-bottom: 60px;
 }
 .my_photos .slide {
-  max-width: 93%;
+  max-width: 90%;
   margin: auto;
 }
 
@@ -235,4 +195,122 @@ a:hover {
 .contact_me .container .info .information .icon li {
   text-align: center;
   margin: 15px 0;
+}
+
+@media (max-width: 1024px) {
+  .sidebar {
+    width: 7%;
+  }
+  .me img {
+    width: 40% !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 90% !important;
+  }
+  .sidebar {
+    flex-direction: row;
+    width: 99%;
+    height: 8vh;
+    z-index: 99;
+  }
+  .sidebar h5 {
+    margin: 5px 0;
+    font-size: 1rem;
+  }
+  .sidebar i {
+    font-size: 1.2rem;
+  }
+  .header .container img {
+    width: 60%;
+  }
+  .header .container h1 {
+    font-size: 40px;
+  }
+  #about {
+    padding-top: 60px;
+  }
+  .me {
+    flex-direction: column;
+  }
+  .me p {
+    width: 100% !important;
+  }
+  .me img {
+    width: 80% !important;
+  }
+  #photo {
+    padding-top: 60px;
+  }
+  .my_photos .slide {
+    max-width: 100%;
+    margin: auto;
+  }
+  .contact_me {
+    padding-top: 60px;
+    padding-bottom: 10px;
+  }
+  .contact_me .container img {
+    width: 25%;
+  }
+  .contact_me .container .info .information ul {
+    font-size: 1rem;
+  }
+  .contact_me .container .info .information .icon li {
+    margin: 15px 0;
+  }
+}
+
+@media (max-width: 426px) {
+  .sidebar {
+    width: 98%;
+  }
+  .sidebar h5 {
+    display: none;
+  }
+  .sidebar a {
+    height: 100%;
+  }
+  .sidebar i {
+    margin-top: 11px;
+    font-size: 1rem;
+  }
+  .sidebar a .home,
+  a .about,
+  a .photos,
+  a .contact {
+    height: 100%;
+  }
+  .header .container h1 {
+    font-size: 32px;
+  }
+  .header .container {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .header .container img {
+    width: 100%;
+  }
+  .contact_me .container .info {
+    flex-direction: column;
+  }
+  .contact_me .container img {
+    width: 40%;
+    margin: 0;
+  }
+  .contact_me .container .info .information ul {
+    font-size: 13px;
+  }
+  .contact_me .container .info .information .icon li {
+    font-size: 10px;
+    margin: 10px 0;
+  }
+  form {
+    font-size: 15px;
+  }
+  form .form-control {
+    font-size: 12px;
+  }
 }
