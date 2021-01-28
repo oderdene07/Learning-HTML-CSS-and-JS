@@ -3,6 +3,7 @@
   padding: 0;
   background-color: rgb(37, 37, 37);
   color: #fff;
+  scroll-behavior: smooth;
 }
 .container {
   max-width: 70% !important;
@@ -61,7 +62,9 @@
 }
 
 /* about */
-
+#about {
+  padding-bottom: 60px;
+}
 .about .container i {
   font-size: 24px;
 }
@@ -155,9 +158,8 @@
 }
 
 /* photos */
-
-.my_photos {
-  padding-top: 60px;
+#photo {
+  padding-bottom: 60px;
 }
 .my_photos .slide {
   max-width: 93%;
@@ -165,7 +167,7 @@
 }
 
 .contact_me {
-  padding: 60px 0;
+  padding-bottom: 60px;
 }
 .contact_me .container i {
   font-size: 1.3rem;
